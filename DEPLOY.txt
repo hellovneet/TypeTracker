@@ -1,0 +1,36 @@
+TYPE TRACK - VERCEL DEPLOY
+
+Upload ALL files in this folder to the ROOT of your GitHub repository.
+
+Required:
+index.html
+style.css
+script.js
+vercel.json
+
+Do NOT upload the Electron files/package.json/main.js for the web deployment.
+
+Then import the GitHub repository into Vercel and deploy.
+
+Features included:
+- Test Mode
+- Manual Practice
+- Duration selector
+- Category selector: General English, Computer/IT, IoT, Programming
+- Daily WPM goal
+- My Notes practice
+- Live WPM
+- Accuracy
+- Error tracking
+- Progress bar
+- Virtual keyboard
+- Dark mode
+- Performance dashboard
+- Best WPM
+- Best accuracy
+- Total tests
+- Streak
+- Practice time
+- Recent sessions
+- LocalStorage history/notes/theme/goal
+- Responsive mobile layout
