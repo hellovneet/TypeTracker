@@ -1,2 +1,7 @@
-# TypeTracker
-a modern, responsive typing practice web app designed to help users improve their typing speed, accuracy, and consistency. TypeTrack includes timed typing tests, manual notes practice, live WPM tracking, accuracy analysis, performance history, daily goals, streaks, virtual keyboard, multiple categories, dark mode, and local data storage. 
+# TypeTrack v2
+Student Typing Performance Tracker by Vineet Sharma.
+
+Features: Test Mode, Manual Notes Practice, 15/30/60/120 sec timers, categories, live WPM, accuracy, errors, daily goal, dark mode, virtual keyboard, localStorage history, streaks and performance dashboard.
+
+### CodePen
+Import `dist/index.html`, `dist/style.css`, and `dist/script.js` into CodePen HTML/CSS/JS panels.
