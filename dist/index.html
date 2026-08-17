@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="TypeTrack - Student Typing Performance Tracker">
+
+  <title>TypeTrack | Vineet Sharma</title>
+
+  <!-- CSS CONNECTION -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+      <div class="brand">
+
+        <div class="brand-icon">
+          ⌨️
+        </div>
+
+        <div>
+          <h1>TypeTrack</h1>
+          <p>Student Typing Performance Tracker</p>
+        </div>
+
+      </div>
+
+      <div class="developer">
+
+        <span>Developed by</span>
+
+        <strong>Vineet Sharma</strong>
+
+      </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <span class="badge">
+          ⚡ Smart Typing Practice
+        </span>
+
+        <h2>
+          Improve Your
+          <span>Typing Speed</span>
+        </h2>
+
+        <p>
+          Practice typing, measure your speed,
+          improve accuracy and track your
+          performance over time.
+        </p>
+
+        <div class="hero-features">
+
+          <span>🚀 Live WPM</span>
+
+          <span>🎯 Accuracy</span>
+
+          <span>📊 Performance</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <div class="speed-circle">
+
+          <strong>40</strong>
+
+          <span>WPM</span>
+
+        </div>
+
+        <div class="hero-card-info">
+
+          <strong>Ready to improve?</strong>
+
+          <span>
+            Start your typing journey today.
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+      <!-- MODE SECTION -->
+
+      <section class="section">
+
+        <div class="section-heading">
+
+          <div>
+
+            <span class="section-label">
+              GET STARTED
+            </span>
+
+            <h2>
+              Choose Your Mode
+            </h2>
+
+          </div>
+
+          <p>
+            Select how you want to practice.
+          </p>
+
+        </div>
+
+
+        <div class="mode-container">
+
+
+          <!-- TEST MODE -->
+
+          <button
+            class="mode-card active"
+            id="testMode"
+            type="button">
+
+            <div class="mode-icon test-icon">
+              📝
+            </div>
+
+            <div class="mode-content">
+
+              <h3>
+                Test Mode
+              </h3>
+
+              <p>
+                Type the paragraph shown on screen
+                and test your typing speed and accuracy.
+              </p>
+
+              <div class="mode-footer">
+
+                <span>
+                  Speed + Accuracy
+                </span>
+
+                <b>→</b>
+
+              </div>
+
+            </div>
+
+          </button>
+
+
+          <!-- MANUAL MODE -->
+
+          <button
+            class="mode-card"
+            id="manualMode"
+            type="button">
+
+            <div class="mode-icon manual-icon">
+              ✍️
+            </div>
+
+            <div class="mode-content">
+
+              <h3>
+                Manual Practice
+              </h3>
+
+              <p>
+                Type anything from your own notes,
+                book or study material.
+              </p>
+
+              <div class="mode-footer">
+
+                <span>
+                  Free Typing Practice
+                </span>
+
+                <b>→</b>
+
+              </div>
+
+            </div>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= TYPING SECTION ================= -->
+
+      <section class="typing-section">
+
+
+        <div class="typing-header">
+
+          <div>
+
+            <span class="section-label">
+              TYPING SESSION
+            </span>
+
+            <h2 id="modeTitle">
+              Typing Test
+            </h2>
+
+          </div>
+
+
+          <div class="status">
+
+            <span
+              class="status-dot"
+              id="statusDot">
+            </span>
+
+            <span id="statusText">
+              Ready
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= STATS ================= -->
+
+        <div class="stats">
+
+
+          <div class="stat">
+
+            <div class="stat-icon">
+              ⏱️
+            </div>
+
+            <div>
+
+              <span>
+                Time
+              </span>
+
+              <strong id="timer">
+                00:00
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-icon">
+              🚀
+            </div>
+
+            <div>
+
+              <span>
+                WPM
+              </span>
+
+              <strong id="wpm">
+                0
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-icon">
+              🎯
+            </div>
+
+            <div>
+
+              <span>
+                Accuracy
+              </span>
+
+              <strong id="accuracy">
+                100%
+              </strong>
+
+            </div>
+
+          </div>
+
+
+          <div class="stat">
+
+            <div class="stat-icon">
+              🔤
+            </div>
+
+            <div>
+
+              <span>
+                Words
+              </span>
+
+              <strong id="words">
+                0
+              </strong>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= TEST TEXT ================= -->
+
+        <div
+          class="typing-box"
+          id="typingBox">
+
+
+          <div class="text-header">
+
+            <span>
+              📄 Text to type
+            </span>
+
+            <small>
+              Test paragraph
+            </small>
+
+          </div>
+
+
+          <div
+            id="testText"
+            class="test-text">
+
+            The quick brown fox jumps over the lazy dog.
+            Typing regularly helps students improve their
+            speed, accuracy and overall keyboard skills.
+
+          </div>
+
+
+          <div class="input-header">
+
+            <span>
+              ⌨️ Your typing area
+            </span>
+
+            <small id="inputHint">
+              Click Start and begin typing
+            </small>
+
+          </div>
+
+
+          <textarea
+            id="typingInput"
+            placeholder="Click Start and begin typing..."
+            disabled>
+          </textarea>
+
+
+        </div>
+
+
+        <!-- ================= BUTTONS ================= -->
+
+        <div class="buttons">
+
+          <button
+            id="startBtn"
+            class="primary-btn"
+            type="button">
+
+            ▶ Start Test
+
+          </button>
+
+
+          <button
+            id="finishBtn"
+            class="finish-btn"
+            type="button"
+            disabled>
+
+            ⏹ Finish
+
+          </button>
+
+
+          <button
+            id="resetBtn"
+            class="reset-btn"
+            type="button">
+
+            ↻ Reset
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- ================= RESULT ================= -->
+
+      <section
+        class="result-section"
+        id="resultSection">
+
+
+        <div class="result-title">
+
+          <span class="success-icon">
+            🏆
+          </span>
+
+          <div>
+
+            <span class="section-label">
+              SESSION COMPLETE
+            </span>
+
+            <h2>
+              Your Performance
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="result-container">
+
+
+          <div>
+
+            <span>
+              Typing Speed
+            </span>
+
+            <strong id="resultWpm">
+              0 WPM
+            </strong>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              Accuracy
+            </span>
+
+            <strong id="resultAccuracy">
+              100%
+            </strong>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              Time Taken
+            </span>
+
+            <strong id="resultTime">
+              00:00
+            </strong>
+
+          </div>
+
+
+          <div>
+
+            <span>
+              Total Words
+            </span>
+
+            <strong id="resultWords">
+              0
+            </strong>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+      <div class="footer-brand">
+
+        <strong>
+          TypeTrack
+        </strong>
+
+        <span>
+          Student Typing Performance Tracker
+        </span>
+
+      </div>
+
+
+      <div class="footer-developer">
+
+        Designed & Developed by
+
+        <strong>
+          Vineet Sharma
+        </strong>
+
+      </div>
+
+
+      <div class="footer-copy">
+
+        © 2026 TypeTrack
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <!-- JAVASCRIPT CONNECTION -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
