@@ -1,0 +1,8 @@
+TypeTracker - Vercel Ready
+
+This is a static HTML/CSS/JavaScript project.
+Vercel settings:
+- Framework Preset: Other
+- Build Command: leave empty
+- Output Directory: leave empty (.)
+- Install Command: leave empty
